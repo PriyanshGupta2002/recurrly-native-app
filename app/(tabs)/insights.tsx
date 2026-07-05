@@ -1,11 +1,12 @@
+import SafeView from "@/components/shared/safe-view";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const Insights = () => {
   return (
-    <View>
+    <SafeView>
       <Text>Insights</Text>
-    </View>
+    </SafeView>
   );
 };
 

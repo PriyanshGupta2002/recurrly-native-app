@@ -1,11 +1,12 @@
+import SafeView from "@/components/shared/safe-view";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text } from "react-native";
 
 const Subscriptions = () => {
   return (
-    <View>
+    <SafeView>
       <Text>Subscriptions</Text>
-    </View>
+    </SafeView>
   );
 };
 
