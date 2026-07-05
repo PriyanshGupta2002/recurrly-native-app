@@ -5,37 +5,35 @@ import { Text } from "react-native";
 
 export default function App() {
   return (
-    <SafeView className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-bold text-success">
-        Welcome to Nativewind!
-      </Text>
+    <SafeView className="flex-1  bg-background">
+      <Text className="text-7xl font-sans-extrabold text-success">Home</Text>
       <Link
         href={"/Onboarding"}
-        className="mt-4 rounded p-3 bg-primary text-white "
+        className="mt-4 font-sans-bold rounded p-3 bg-primary text-white "
       >
         Go to Onboarding
       </Link>
       <Link
         href={"/(auth)/sign-in"}
-        className="mt-4 rounded p-3 bg-primary text-white "
+        className="mt-4  font-sans-boldrounded p-3 bg-primary text-white "
       >
         Go to Sign In
       </Link>
       <Link
         href={"/(auth)/sign-up"}
-        className="mt-4 rounded p-3 bg-primary text-white "
+        className="mt-4 font-sans-bold rounded p-3 bg-primary text-white "
       >
         Go to Sign Up
       </Link>
       <Link
-        className="mt-4 rounded p-3 bg-primary text-white "
+        className="mt-4 font-sans-bold rounded p-3 bg-primary text-white "
 
         href={"/subscriptions/spotify"}
       >
         Spotify Subscriptions
       </Link>
       <Link
-        className="mt-4 rounded p-3 bg-primary text-white "
+        className="mt-4 font-sans-bold rounded p-3 bg-primary text-white "
 
         href={{
           pathname: "/subscriptions/[id]",
