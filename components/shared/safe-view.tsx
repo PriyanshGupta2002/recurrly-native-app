@@ -12,7 +12,7 @@ type SafeViewProps = {
 
 const SafeView = ({ children, className = "" }: SafeViewProps) => {
   return (
-    <SafeAreaView className={twMerge(clsx("p-2", className))}>
+    <SafeAreaView className={twMerge(clsx("p-2 flex-1", className))}>
       {children}
     </SafeAreaView>
   );
