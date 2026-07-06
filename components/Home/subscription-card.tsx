@@ -84,7 +84,7 @@ const SubscripitonCard: FC<SubscriptionCardProps> = ({
                   ellipsizeMode="tail"
                   numberOfLines={1}
                 >
-                  {startDate ? formatSubscriptionDateTime(startDate) : ""}
+                  {formatSubscriptionDateTime(startDate)}
                 </Text>
               </View>
             </View>
@@ -97,7 +97,7 @@ const SubscripitonCard: FC<SubscriptionCardProps> = ({
                   ellipsizeMode="tail"
                   numberOfLines={1}
                 >
-                  {renewalDate ? formatSubscriptionDateTime(renewalDate) : ""}
+                  {formatSubscriptionDateTime(renewalDate)}
                 </Text>
               </View>
             </View>
@@ -109,7 +109,7 @@ const SubscripitonCard: FC<SubscriptionCardProps> = ({
                   ellipsizeMode="tail"
                   numberOfLines={1}
                 >
-                  {status ? formatStatusLabel(status) : ""}
+                  {formatStatusLabel(status)}
                 </Text>
               </View>
             </View>

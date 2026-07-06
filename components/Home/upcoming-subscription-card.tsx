@@ -14,7 +14,9 @@ const UpcomingSubcriptionCard: FC<UpcomingSubscriptionCardProps> = ({
       <View className="upcoming-row">
         <Image source={icon} className="upcoming-icon" />
         <View>
-          <Text className="upcoming-price">{formatCurrency(price)}</Text>
+          <Text className="upcoming-price">
+            {formatCurrency(price, currency)}
+          </Text>
           <Text className="upcoming-meta" numberOfLines={1}>
             {daysLeft > 1 ? `${daysLeft} days left` : "Last Day"}
           </Text>
